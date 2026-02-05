@@ -1,3 +1,41 @@
 #header {
-  width: 100%;
+  width: 1920px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 650px;
+  background: #f6f3ed;
+  padding: 0 50px;
+}
+#header .logo img {
+  width: 140px;
+}
+.gnb_left {
+  gap: 68px;
+  display: flex;
+}
+.gnb_right {
+  display: flex;
+  gap: 68px;
+}
+.gnb_right li a {
+  position: relative;
+}
+.gnb_right li a:hover i {
+  opacity: 0;
+}
+.gnb_right li a:hover p {
+  opacity: 1;
+}
+.gnb_right li a p {
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-0.3rem) translateY(-1rem);
+}
+
+@media (max-width: 1920px) {
+  #header {
+    width: 100%;
+  }
 }

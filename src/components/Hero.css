@@ -1,0 +1,21 @@
+.main_hero {
+  width: 1920px;
+  height: 450px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_hero img {
+  width: 100%;
+  margin: 0 auto;
+}
+.main_hero img p {
+  font-size: 28px;
+}
+
+@media (max-width) {
+  .main_hero {
+    width: 100%;
+  }
+}
