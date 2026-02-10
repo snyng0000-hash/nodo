@@ -1,1 +1,24 @@
+.prd_slide_left {
+  display: flex;
+  margin: 10px auto;
+}
+.prd_slide_left .prd_slide_left_slide {
+  width: 73%;
+}
+.prd_slide_left .mySwiper {
+}
 
+.slide_img {
+  width: 225px;
+  height: 250px;
+  background: #555;
+  border-radius: 25px;
+}
+
+.prd_slide_right {
+  display: flex;
+  margin: 10px auto;
+}
+.prd_slide_right .prd_slide_right_slide {
+  width: 73%;
+}
