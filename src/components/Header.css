@@ -7,6 +7,8 @@
   gap: 650px;
   background: #f6f3ed;
   padding: 0 50px;
+  position: fixed;
+  z-index: 9999;
 }
 #header .logo img {
   width: 140px;

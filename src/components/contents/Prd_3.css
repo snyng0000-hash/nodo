@@ -1,0 +1,12 @@
+.prd_3_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+.prd_3_item {
+  background: #333;
+  width: 33%;
+  height: 450px;
+  border-radius: 25px;
+  padding: 8px;
+}

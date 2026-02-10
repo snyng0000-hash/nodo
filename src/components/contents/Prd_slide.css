@@ -1,11 +1,42 @@
+.prd_slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.prd_title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 85px 0 120px;
+}
 .prd_slide_left {
   display: flex;
-  margin: 10px auto;
-}
-.prd_slide_left .prd_slide_left_slide {
-  width: 73%;
+  margin-bottom: 45px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 .prd_slide_left .mySwiper {
+  width: 80rem;
+  overflow: hidden;
+}
+.prd_slide_left .leftslide_blank {
+  width: 20rem;
+}
+.prd_slide_right {
+  display: flex;
+  margin-bottom: 145px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.prd_slide_right .rightslide_blank {
+  width: 40%;
+}
+
+.prd_slide_right .mySwiper {
+  width: 60%;
 }
 
 .slide_img {
@@ -13,12 +44,19 @@
   height: 250px;
   background: #555;
   border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.prd_slide_right {
-  display: flex;
-  margin: 10px auto;
+.slide_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.prd_slide_right .prd_slide_right_slide {
-  width: 73%;
+
+.prd_slide_left .mySwiper .swiper-slide,
+.prd_slide_right .mySwiper .swiper-slide {
+  width: 225px !important;
 }

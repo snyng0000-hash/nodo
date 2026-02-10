@@ -1,0 +1,51 @@
+#scroll_bt {
+  position: fixed;
+  bottom: 110px;
+  right: 50px;
+  color: #d9d4c8;
+  display: flex;
+  gap: 11px;
+  z-index: 999;
+}
+.scroll_bt_box {
+  width: 60px;
+  height: 60px;
+  background: #fafaf8;
+  border-radius: 50px;
+  text-align: center;
+}
+.scroll_bt_box:hover {
+  background: #f6f3ed;
+  color: #2a2a2a;
+  cursor: pointer;
+}
+.scroll_bt_box i {
+  font-size: 30px;
+  text-align: center;
+  line-height: 60px;
+}
+.clock_popup {
+  width: 231px;
+  height: 95vh;
+  background: #f6f3ed;
+  position: fixed;
+  top: 65px;
+  right: -231px;
+  z-index: 100;
+  transition: right 0.3s ease-in-out;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.clock_popup.active {
+  right: 0;
+}
+
+@keyframes slideFromRight {
+  from {
+    right: -231px;
+  }
+  to {
+    right: 0;
+  }
+}

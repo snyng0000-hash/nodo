@@ -2,6 +2,7 @@ import Header from './Header';
 import Hero from './Hero';
 import Main_cont1 from './Main_cont1';
 import Main_cont2 from './Main_cont2';
+import Footer from './Footer';
 
 import './Home.css';
 
@@ -12,6 +13,7 @@ function Home() {
       <Hero></Hero>
       <Main_cont1></Main_cont1>
       <Main_cont2></Main_cont2>
+      <Footer></Footer>
     </>
   );
 }

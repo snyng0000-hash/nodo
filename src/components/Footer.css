@@ -1,0 +1,36 @@
+#footer {
+  background: #e8dccf;
+  color: #6d7480;
+  padding: 0 50px;
+}
+.footer_top ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 65px 0;
+}
+.footer_mid {
+  display: flex;
+  margin-bottom: 30px;
+}
+.footer_mid ul li {
+  padding: 7px 0;
+}
+.footer_mid ul li a {
+  padding: 0 45px 0 0;
+}
+.footer_bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 45px;
+}
+.footer_bot .footer_policy {
+  display: flex;
+  gap: 60px;
+}
+.footer_bot .footer_icon {
+  display: flex;
+  gap: 11px;
+  font-size: 30px;
+}

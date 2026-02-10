@@ -1,14 +1,15 @@
 import { useEffect } from 'react';
 
 import Home from './components/Home';
-import Header from './components/Header';
+import Cont1 from './components/Cont1';
 
 import './App.css';
 
 function App() {
   return (
     <>
-      <Home></Home>
+      {/* <Home></Home> */}
+      <Cont1></Cont1>
     </>
   );
 }
