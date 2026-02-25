@@ -1,12 +1,39 @@
-.prd_3_list {
+.prd_3 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 50px;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 16px;
+  margin-bottom: 55px;
 }
-.prd_3_item {
-  background: #333;
-  width: 33%;
-  height: 450px;
+.prd_3_parts {
+  width: 31%;
   border-radius: 25px;
-  padding: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.prd_3_parts img {
+  width: 100%;
+  height: 100%;
+}
+.prd_3_parts .prd_3_text {
+  position: absolute;
+  bottom: 40px;
+  left: 45px;
+  color: #2a2a2a;
+}
+.prd_3_product {
+  font-size: 24px;
+  margin-bottom: 13px;
+}
+.prd_3_prrice {
+  font-size: 18px;
+}
+.prd_3_more {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: #c9b59a;
+  margin-bottom: 140px;
 }
