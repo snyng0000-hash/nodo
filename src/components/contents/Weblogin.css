@@ -1,0 +1,45 @@
+.web_login {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 235px;
+}
+.naver_login_btn {
+  width: 100%;
+  border: 1px solid rgb(109, 116, 128, 0.5);
+  padding: 12px 20px;
+  margin-bottom: 16px;
+  color: #6d7480;
+}
+.naver_login_btn:hover {
+  background: #03c75a;
+  color: white;
+  border: 1px solid #03c75a;
+}
+.kakao_login_btn {
+  width: 100%;
+  border: 1px solid rgb(109, 116, 128, 0.5);
+  padding: 12px 20px;
+  margin-bottom: 16px;
+  color: #6d7480;
+}
+.kakao_login_btn:hover {
+  background: #fee500;
+  color: black;
+  border: 1px solid #fee500;
+}
+
+.guest_login_btn {
+  width: 100%;
+  border: 1px solid rgb(109, 116, 128, 0.5);
+  padding: 12px 20px;
+  margin-bottom: 16px;
+  color: #6d7480;
+}
+.guest_login_btn:hover {
+  background: #6d7480;
+  color: white;
+  border: 1px solid #6d7480;
+}

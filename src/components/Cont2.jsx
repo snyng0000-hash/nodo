@@ -1,11 +1,8 @@
-import Header from './Header';
 import './Cont2.css';
-import Footer from './Footer';
 
 function Cont2() {
   return (
     <>
-      <Header></Header>
       <div className="cont2_fadewrap">
         <div
           data-aos="fade-right"
@@ -87,8 +84,6 @@ function Cont2() {
           <img src="./imgs/cont2_story.png" alt="story" />
         </div>
       </div>
-
-      <Footer></Footer>
     </>
   );
 }

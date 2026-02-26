@@ -25,12 +25,12 @@
   line-height: 60px;
 }
 .clock_popup {
-  width: 231px;
+  width: 15%;
   height: 95vh;
   background: #f6f3ed;
   position: fixed;
   top: 65px;
-  right: -231px;
+  right: -15%;
   z-index: 100;
   transition: right 0.3s ease-in-out;
   padding: 20px;
@@ -43,7 +43,7 @@
 
 @keyframes slideFromRight {
   from {
-    right: -231px;
+    right: -15%;
   }
   to {
     right: 0;
