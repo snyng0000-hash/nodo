@@ -1,7 +1,27 @@
+import React, { useEffect, useState } from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
 
 function Header() {
+  const [isLogin, setIsLogin] = useState(false);
+
+  useEffect(() => {
+    //페이지가 켜질 때 로컬스토리지 확인
+    const loggedIn = localStorage.getItem('isLoggedIn');
+    if (loggedIn === 'true') {
+      setIsLogin(true);
+    }
+  }, []);
+
+  //로그아웃 함수
+  const handleLogout = () => {
+    localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('userId');
+    setIsLogin(false); // 상태 변경
+    alert('로그아웃 되었습니다.');
+    window.location.href = '/'; // 메인으로 이동
+  };
+
   return (
     <>
       <div id="header">
@@ -19,10 +39,18 @@ function Header() {
         </Link>
         <ul className="gnb_right">
           <li>
-            <Link to="/login">
-              <i className="fa-solid fa-user"></i>
-              <p>login</p>
-            </Link>
+            {isLogin ? (
+              <Link to="/" onClick={handleLogout}>
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>logout</p>
+              </Link>
+            ) : (
+              <Link to="/login">
+                <i className="fa-solid fa-user"></i>
+
+                <p>login</p>
+              </Link>
+            )}
           </li>
           <li>
             <a href="#">
