@@ -37,7 +37,7 @@ function Cont2() {
           data-aos-duration="1500"
           className="fade-left"
         >
-          <img src="./imgs/cont2_fade1.png" alt="fade1" />'
+          <img src="./imgs/cont2_fade2.png" alt="fade1" />'
         </div>
       </div>
       <div className="cont2_fadewrap">
@@ -46,7 +46,7 @@ function Cont2() {
           data-aos-duration="1500"
           className="fade-right"
         >
-          <img src="./imgs/cont2_fade1.png" alt="fade1" />'
+          <img src="./imgs/cont2_fade3.png" alt="fade1" />'
         </div>
         <div
           data-aos="fade-up"
@@ -75,7 +75,7 @@ function Cont2() {
           data-aos-duration="1500"
           className="fade-left"
         >
-          <img src="./imgs/cont2_fade1.png" alt="fade1" />'
+          <img src="./imgs/cont2_fade4.png" alt="fade1" />'
         </div>
       </div>
       <div className="cont2_story">

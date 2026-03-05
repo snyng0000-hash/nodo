@@ -5,13 +5,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .main_hero img {
   width: 100%;
+  height: 60vw;
   margin: 0 auto;
+  object-fit: cover;
+  position: absolute;
 }
-.main_hero img p {
+.main_hero p {
+  position: absolute;
   font-size: 28px;
+  color: #fff;
+  z-index: 9999;
+  top: 20vw;
+  text-align: center;
 }
 
 @media (max-width) {

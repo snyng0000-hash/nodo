@@ -5,7 +5,7 @@ function Prd_1() {
     <>
       <div className="prd_1">
         <a href="#">
-          <img src="#" alt="베스트제품" />
+          <img src="./imgs/bestprd.png" alt="베스트제품" />
         </a>
       </div>
     </>

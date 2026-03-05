@@ -63,37 +63,37 @@ function Prd_slide() {
             >
               <SwiperSlide>
                 <div className="slide_img">
-                  <img src="#" alt="슬라이드1" />
+                  <img src="./imgs/main_slide1.png" alt="슬라이드1" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="slide_img">
-                  <img src="#" alt="슬라이드2" />
+                  <img src="./imgs/main_slide1.png" alt="슬라이드2" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="slide_img">
-                  <img src="#" alt="슬라이드3" />
+                  <img src="./imgs/main_slide1.png" alt="슬라이드3" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="slide_img">
-                  <img src="#" alt="슬라이드4" />
+                  <img src="./imgs/main_slide1.png" alt="슬라이드4" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="slide_img">
-                  <img src="#" alt="슬라이드5" />
+                  <img src="./imgs/main_slide1.png" alt="슬라이드5" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="slide_img">
-                  <img src="#" alt="슬라이드6" />
+                  <img src="./imgs/main_slide1.png" alt="슬라이드6" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="slide_img">
-                  <img src="#" alt="슬라이드7" />
+                  <img src="./imgs/main_slide1.png" alt="슬라이드7" />
                 </div>
               </SwiperSlide>
             </Swiper>
@@ -114,32 +114,32 @@ function Prd_slide() {
           >
             <SwiperSlide className="slide_img">
               <div>
-                <img src="#" alt="슬라이드1" />
+                <img src="./imgs/main_slide7.png" alt="슬라이드1" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="slide_img">
               <div>
-                <img src="#" alt="슬라이드2" />
+                <img src="./imgs/main_slide7.png" alt="슬라이드2" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="slide_img">
               <div>
-                <img src="#" alt="슬라이드3" />
+                <img src="./imgs/main_slide7.png" alt="슬라이드3" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="slide_img">
               <div>
-                <img src="#" alt="슬라이드4" />
+                <img src="./imgs/main_slide7.png" alt="슬라이드4" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="slide_img">
               <div>
-                <img src="#" alt="슬라이드5" />
+                <img src="./imgs/main_slide7.png" alt="슬라이드5" />
               </div>
             </SwiperSlide>
             <SwiperSlide className="slide_img">
               <div>
-                <img src="#" alt="슬라이드6" />
+                <img src="./imgs/main_slide7.png" alt="슬라이드6" />
               </div>
             </SwiperSlide>
           </Swiper>
