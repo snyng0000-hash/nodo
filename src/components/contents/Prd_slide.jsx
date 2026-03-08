@@ -4,148 +4,64 @@ import { Autoplay, A11y } from 'swiper/modules';
 
 import './Prd_slide.css';
 function Prd_slide() {
-  const handleLeftSwiperInit = (swiper) => {
-    // Swiper 초기화 후 약간의 지연을 두고 위치 조정
-    setTimeout(() => {
-      // 슬라이드 너비의 절반만큼 이동 (225px / 2 = 112.5px)
-      adjustSwiperPosition(swiper);
-    }, 100);
-  };
-
-  const adjustSwiperPosition = (swiper) => {
-    // 첫 슬라이드가 항상 반만 보이도록 위치 고정
-    swiper.setTranslate(-112.5);
-    swiper.updateProgress();
-  };
-
-  const handleSlideChange = (swiper) => {
-    // 루프되어 처음으로 돌아갈 때 위치 재조정
-    if (swiper.realIndex === 0) {
-      setTimeout(() => {
-        adjustSwiperPosition(swiper);
-      }, 50);
-    }
-  };
-
-  const handleRightSwiperInit = (swiper) => {
-    // 첫 슬라이드가 완전히 보이도록 초기 오프셋 설정 (0으로 설정)
-    setTimeout(() => {
-      swiper.setTranslate(0);
-      swiper.updateProgress();
-    }, 100);
-  };
-
-  const handleRightSlideChange = (swiper) => {
-    // 루프되어 처음으로 돌아갈 때 위치 재조정
-    if (swiper.realIndex === 0) {
-      setTimeout(() => {
-        swiper.setTranslate(0);
-        swiper.updateProgress();
-      }, 50);
-    }
-  };
+ // 슬라이드 데이터 (이미지 경로에 맞춰 숫자 조절)
+  const topSlides = [1, 2, 3, 4, 5, 6, 7];
+  const bottomSlides = [6, 7, 8, 9, 10, 11];
 
   return (
-    <>
-      <div className="prd_slide">
-        <h2 className="prd_title">text</h2>
-        <div className="prd_slide_left">
-          <div className="prd_slide_left_slide">
-            <Swiper
-              onSwiper={handleLeftSwiperInit}
-              onSlideChange={handleSlideChange}
-              slidesPerView={5}
-              spaceBetween={10}
-              loop={true}
-              autoplay={{ delay: 4000 }}
-              modules={[Autoplay, A11y]}
-              className="mySwiper"
-            >
-              <SwiperSlide>
-                <div className="slide_img">
-                  <img src="./imgs/main_slide1.png" alt="슬라이드1" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="slide_img">
-                  <img src="./imgs/main_slide1.png" alt="슬라이드2" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="slide_img">
-                  <img src="./imgs/main_slide1.png" alt="슬라이드3" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="slide_img">
-                  <img src="./imgs/main_slide1.png" alt="슬라이드4" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="slide_img">
-                  <img src="./imgs/main_slide1.png" alt="슬라이드5" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="slide_img">
-                  <img src="./imgs/main_slide1.png" alt="슬라이드6" />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="slide_img">
-                  <img src="./imgs/main_slide1.png" alt="슬라이드7" />
-                </div>
-              </SwiperSlide>
-            </Swiper>
-          </div>
-          <div className="leftslide_blank"></div>
-        </div>
-        <div className="prd_slide_right">
-          <div className="rightslide_blank"></div>
+    <div className="prd_slide_container">
+      {/* 위쪽 슬라이드: 왼쪽(슬라이드) + 오른쪽(텍스트) */}
+      <div className="prd_row top_row">
+        <div className="slide_area">
           <Swiper
-            onSwiper={handleRightSwiperInit}
-            onSlideChange={handleRightSlideChange}
-            slidesPerView={4}
-            spaceBetween={10}
+            slidesPerView={5} 
+            
             loop={true}
-            autoplay={{ delay: 3000 }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             modules={[Autoplay, A11y]}
-            className="mySwiper"
           >
-            <SwiperSlide className="slide_img">
-              <div>
-                <img src="./imgs/main_slide7.png" alt="슬라이드1" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="slide_img">
-              <div>
-                <img src="./imgs/main_slide7.png" alt="슬라이드2" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="slide_img">
-              <div>
-                <img src="./imgs/main_slide7.png" alt="슬라이드3" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="slide_img">
-              <div>
-                <img src="./imgs/main_slide7.png" alt="슬라이드4" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="slide_img">
-              <div>
-                <img src="./imgs/main_slide7.png" alt="슬라이드5" />
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="slide_img">
-              <div>
-                <img src="./imgs/main_slide7.png" alt="슬라이드6" />
-              </div>
-            </SwiperSlide>
+            {topSlides.map((num) => (
+              <SwiperSlide key={`top-${num}`}>
+                <div className="slide_img_box">
+                  <img src={`./imgs/main_slide${num}.png`} alt={`상단슬라이드${num}`} />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+        <div className="text_area">
+          <h2>Premium Selection</h2>
+          <p>공간을 채우는 감각적인 아이템들을 확인해보세요.</p>
+        </div>
+      </div>
+
+      {/* 아래쪽 슬라이드: 왼쪽(텍스트) + 오른쪽(슬라이드) */}
+      <div className="prd_row bottom_row">
+        <div className="text_area">
+          <h2>New Arrivals</h2>
+          <p>새롭게 입고된 미니멀한 시리즈입니다.</p>
+        </div>
+        <div className="slide_area">
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={20}
+            loop={true}
+            autoplay={{ delay: 4000, disableOnInteraction: false, reverseDirection: true}}
+            modules={[Autoplay, A11y]}
+          >
+            {bottomSlides.map((num) => (
+              <SwiperSlide key={`bottom-${num}`}>
+                <div className="slide_img_box">
+                  <img src={`./imgs/main_slide${num}.png`} alt={`하단슬라이드${num}`} />
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
-    </>
+    </div>
   );
 }
+
+ 
 export default Prd_slide;

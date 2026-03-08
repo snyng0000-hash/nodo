@@ -1,4 +1,4 @@
-import Prd_1 from './contents/prd_1';
+import Prd_1 from './contents/Prd_1';
 import Prd_4 from './contents/Prd_4';
 
 import './Main_cont1.css';

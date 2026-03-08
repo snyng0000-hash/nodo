@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transform: translateY(450px);
 }
 .main_cont1 h2 {
   margin: 185px auto 75px;

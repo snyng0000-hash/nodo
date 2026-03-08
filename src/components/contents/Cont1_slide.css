@@ -1,11 +1,12 @@
 .cont1_slidetrack {
   display: flex;
   align-items: stretch;
-  height: 450px;
+  aspect-ratio: 1/0.3;
   gap: 70px;
   padding: 0 50px;
   position: relative;
   margin-bottom: 180px;
+
 }
 .mySwiper {
   flex: 2;
@@ -43,25 +44,27 @@
 
 .cont1_slide_list {
   position: absolute;
-  padding: 100px 0 0 50px;
+  padding-left:50px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .cont1_slide_list li {
   font-size: 28px;
-  margin-bottom: 5px;
+  padding-bottom: 25px;
 }
 .cont1_slide_rbtn {
   font-size: 80px;
   position: absolute;
-  top: 0;
-  transform: translateY(180%);
-  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2%;
   z-index: 999;
 }
 .cont1_slide_lbtn {
   font-size: 80px;
   position: absolute;
-  top: 0;
-  transform: translateY(180%);
-  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2%;
   z-index: 999;
 }

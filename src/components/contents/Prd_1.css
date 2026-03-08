@@ -1,7 +1,8 @@
 .prd_1 {
   width: 100%;
-  height: 450px;
+  height: 100%;
   padding: 0 50px;
+  aspect-ratio: 1/0.25;
 }
 .prd_1 a {
   height: 100%;

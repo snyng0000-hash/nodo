@@ -1,63 +1,66 @@
-.prd_slide {
+.prd_slide_container {
   width: 100%;
+  padding: 100px 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-}
-.prd_title {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 85px 0 120px;
-}
-.prd_slide_left {
-  display: flex;
-  margin-bottom: 45px;
-  width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-.prd_slide_left .mySwiper {
-  width: 80rem;
-  overflow: hidden;
-}
-.prd_slide_left .leftslide_blank {
-  width: 20rem;
-}
-.prd_slide_right {
-  display: flex;
-  margin-bottom: 145px;
-  width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
+  gap: 50px; /* 위아래 슬라이드 간격 */
+  margin: 600px 0 50px;
 }
 
-.prd_slide_right .rightslide_blank {
-  width: 40%;
-}
-
-.prd_slide_right .mySwiper {
-  width: 60%;
-}
-
-.slide_img {
-  width: 225px;
-  height: 250px;
-  background: #555;
-  border-radius: 25px;
-  overflow: hidden;
+.prd_row {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 80px;
 }
 
-.slide_img img {
-  width: 100%;
-  height: 100%;
+/* 슬라이드와 텍스트 영역 비율 */
+.slide_area {
+  width: 70%;
+  overflow: hidden;
+}
+
+.text_area {
+  width: 30%;
+  text-align: center;
+  padding-right:5%;
+}
+
+.text_area h2 {
+  font-size: 40px;
+  padding:0 0 30px;
+  
+}
+
+.text_area p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* 이미지 크기 고정 */
+.slide_img_box img {
+  width: 95%;
   object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: 20px;
 }
 
-.prd_slide_left .mySwiper .swiper-slide,
-.prd_slide_right .mySwiper .swiper-slide {
-  width: 225px !important;
+.bottom_row .slide_area{
+  width: 53%;
+}
+.bottom_row .text_area{
+  width: 40%;
+}
+
+
+/* 모바일 대응 (반응형 선택사항) */
+@media (max-width: 1024px) {
+  .prd_row {
+    flex-direction: column !important; /* 모바일에선 무조건 위아래로 */
+    text-align: center;
+  }
+  .slide_area, .text_area {
+    width: 100%;
+  }
 }
