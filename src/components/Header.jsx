@@ -30,7 +30,7 @@ function Header() {
             <Link to="/cont1">SHOP</Link>
           </li>
           <li className="gnb_menu">
-            <Link to="/cont2">EVENT</Link>
+            <Link to="/cont2">STORY</Link>
           </li>
         </ul>
 

@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import { prdData, prdData_2 } from '../../data';
+import { prdData} from '../../data';
 
 import './Prd_3.css';
 function Prd_3() {
   return (
     <>
       <div className="prd_3">
-        {prdData_2.map((item) => {
+        {prdData.map((item) => {
           return (
             <Link to={`/prd/${item.id}`} key={item.id} className="prd_3_parts">
               <img src={item.img} alt={item.name} />

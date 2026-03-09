@@ -34,6 +34,7 @@ function App() {
         <Route path="/prd" element={<Cont3_prd />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/prd/:id" element={<Cont3_prd />} />
       </Routes>
 
       <Footer></Footer>
