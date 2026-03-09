@@ -34,3 +34,37 @@
   gap: 11px;
   font-size: 30px;
 }
+
+/* 반응형 */
+@media (max-width: 1024px) {
+  #footer {
+    padding: 0 20px;
+  }
+  .footer_top ul {
+    padding: 50px 0;
+  }
+  .footer_mid {
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 0;
+  }
+  .footer_mid ul {
+    padding: 0;
+  }
+  .footer_mid .none {
+    display: none;
+  }
+  .footer_mid li {
+    padding: 5px 0;
+  }
+
+  .footer_bot {
+    padding-bottom: 15px;
+  }
+  .footer_bot .footer_policy {
+    gap: 20px;
+  }
+  .footer_bot .footer_icon {
+    font-size: 25px;
+  }
+}

@@ -31,10 +31,10 @@ function Footer() {
           </ul>
           <ul>
             <li>
-              <a href="#"></a>
+              <a href="#" className="none"></a>
             </li>
             <li>
-              <a href="#">e-mail</a>
+              <a href="#">e-mail mail@gmail.com</a>
             </li>
             <li>
               <a href="#">통신판매업번호 000-00-0000</a>

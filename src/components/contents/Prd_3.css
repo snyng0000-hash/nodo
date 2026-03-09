@@ -5,10 +5,11 @@
   flex-wrap: wrap;
   width: 100%;
   gap: 16px;
-  margin-bottom: 55px;
+  margin-bottom: 5%;
 }
 .prd_3_parts {
   width: 31%;
+  aspect-ratio: 1/1;
   border-radius: 25px;
   overflow: hidden;
   position: relative;
@@ -16,19 +17,26 @@
 .prd_3_parts img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.prd_3_parts img:hover {
+  transform: scale(1.5);
 }
 .prd_3_parts .prd_3_text {
   position: absolute;
-  bottom: 40px;
+  bottom: 5%;
   left: 45px;
   color: #2a2a2a;
 }
 .prd_3_product {
   font-size: 24px;
-  margin-bottom: 13px;
+  margin-bottom: 5%;
+  color: #fafaf8;
 }
-.prd_3_prrice {
+.prd_3_price {
   font-size: 18px;
+  color: #fafaf8;
 }
 .prd_3_more {
   display: block;
@@ -36,4 +44,44 @@
   font-size: 18px;
   color: #c9b59a;
   margin-bottom: 140px;
+}
+
+/* 반응형 */
+@media (max-width: 1280px) {
+  .prd_3_product {
+    font-size: 20px;
+  }
+  .prd_3_price {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .prd_3_parts {
+    width: 45%;
+  }
+  .prd_3_parts .prd_3_text {
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .prd_3_product {
+    font-size: 20px;
+  }
+  .prd_3_price {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .prd_3_parts {
+    width: 100%;
+  }
+
+  .prd_3_product {
+    font-size: 20px;
+  }
+  .prd_3_price {
+    font-size: 16px;
+  }
 }

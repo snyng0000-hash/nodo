@@ -1,7 +1,7 @@
 #scroll_bt {
   position: fixed;
-  bottom: 110px;
-  right: 50px;
+  bottom: 15%;
+  right: 2.8%;
   color: #d9d4c8;
   display: flex;
   gap: 11px;
@@ -47,5 +47,37 @@
   }
   to {
     right: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .scroll_bt_box {
+    width: 50px;
+    height: 50px;
+  }
+  .scroll_bt_box i {
+    font-size: 24px;
+    line-height: 50px;
+  }
+  .clock_popup {
+    width: 20%;
+    right: -20%;
+  }
+}
+@media (max-width: 768px) {
+  #scroll_bt {
+    bottom: 10%;
+    right: 3%;
+  }
+  .scroll_bt_box {
+    width: 40px;
+    height: 40px;
+  }
+  .scroll_bt_box i {
+    font-size: 18px;
+    line-height: 40px;
+  }
+  .clock_popup {
+    width: 30%;
+    right: -30%;
   }
 }

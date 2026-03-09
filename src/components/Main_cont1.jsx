@@ -7,7 +7,7 @@ function Main_cont1() {
   return (
     <>
       <div className="main_cont1">
-        <h2>text</h2>
+        <h2>Architectural Jewelry</h2>
         <Prd_1></Prd_1>
         <Prd_4></Prd_4>
       </div>

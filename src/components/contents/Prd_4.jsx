@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import prdData from '../../data';
+import { prdData, prdData_2 } from '../../data';
 import './Prd_4.css';
 
 function Prd_4() {
@@ -16,7 +16,6 @@ function Prd_4() {
                   <p className="prd_price">{item.desc}</p>
                 </div>
               </Link>
-             
             </>
           );
         })}
