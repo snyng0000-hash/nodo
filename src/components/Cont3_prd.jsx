@@ -12,7 +12,7 @@ function Cont3_prd() {
     <div className="product_detail">
   
       <div className="top_section">
-        <div className=''>
+        <div className='.top_section_img'>
         <div className="main_img">
           <img src={item.img} alt={item.name} />
         </div>
