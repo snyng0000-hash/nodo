@@ -9,7 +9,7 @@ function Cont1() {
       <h2>shop</h2>
       <h4>
         Discover our latest products
-        <br></br>Discover our latest products
+        <br></br>
       </h4>
       <Prd_3></Prd_3>
       <Cont1_slide></Cont1_slide>

@@ -19,3 +19,9 @@
   height: 100%;
   object-fit: cover;
 }
+@media (max-width: 1024px) {
+  .prd_1 {
+    padding: 0 50px;
+    aspect-ratio: 1/0.4;
+  }
+}

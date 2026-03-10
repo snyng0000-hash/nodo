@@ -1,121 +1,226 @@
 .product_detail {
-width: 100%;
-  
-  padding: 100px 50px 10px; 
- 
-
+  width: 100%;
+  padding: 100px 50px 10px;
 }
-.top_section{
-    display: grid;         
+.top_section {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  
-   border-bottom: 2px solid rgba(109, 116, 128, 0.2); 
-padding-bottom: 100px;
+  align-items: stretch;
+  border-bottom: 2px solid rgba(109, 116, 128, 0.2);
+  padding-bottom: 100px;
   margin-bottom: 100px;
 }
 .top_section_img {
-  display: flex; 
-  flex-direction: column;
-  gap: 40px;           
-  margin-bottom: 50px; 
+  display: flex;
+  gap: 3.5%;
 }
 
 .main_img {
-  width: 100%;
+  height: 620px;
   aspect-ratio: 1/0.8;
-  margin-bottom: 2.5%;
   overflow: hidden;
-  
 }
 
 .main_img img {
-  width: 100%;   
-  height: 100%;    
-  object-fit: cover; 
-  border-radius: 15px; 
-
-
-}
-.sub_imgs {
-  width: 48.5%;
-  height: 40%;
-  aspect-ratio: 1/0.8;
-  display: flex;
-  
-  gap:6%;
-  
-}
-.sub_imgs img {
-  width: 100%;      
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 25px;
+  border-radius: 15px;
+}
+.sub_imgs {
+  display: flex;
+  flex-direction: column;
+
+  height: 600px;
+  aspect-ratio: 1/2;
+  gap: 20px;
+}
+.sub_imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
   transition: opacity 0.3s;
 }
 
 .sub_imgs img:hover {
-  opacity: 0.7; 
+  opacity: 0.7;
 }
 
 .info_area {
-  display: flex;    
-  flex-direction: column; 
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   padding: 0 50px;
+  height: 100%;
 }
 
 .info_area h2 {
-  
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 5px;
- 
 }
-
 
 .info_area .price {
   font-size: 24px;
-  
-  color: #6D7480;
+
+  color: #6d7480;
   margin-bottom: 20px;
 }
 
-
 .info_area .short_desc {
   font-size: 16px;
-  color: #6D7480;
-  line-height: 1.6;  
-  margin-bottom: 40px; 
+  color: #6d7480;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.info_area .order_btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 10 px;
+  width: 100%;
+  margin-top: auto;
+}
+.info_area .order_btn button {
+  width: 48%;
+  line-height: 2;
+  background: rgba(109, 116, 128, 0.5);
+  color: #fafaf8;
+  border-radius: 25px;
 }
 
-.detail_content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+.detail_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
 }
 
 .detail_content_img {
   width: 60%;
-  
-   border-radius: 25px;
-   margin-bottom:6%;
-  
+
+  border-radius: 25px;
+  margin-bottom: 6%;
 }
-.detail_content_img img{
+.detail_content_img img {
   width: 100%;
   object-fit: cover;
- 
 }
 
-
-
 .detail_content h3 {
-  width: 100%; 
+  width: 100%;
   font-size: 24px;
   margin: 40px 0;
-  text-align: center; 
-  border-bottom: 2px solid rgba(109, 116, 128, 0.2); 
+  text-align: center;
+  border-bottom: 2px solid rgba(109, 116, 128, 0.2);
   padding-bottom: 20px;
-  
+}
+
+.detail_content span {
+  width: 100%;
+  text-align: center;
+  line-height: 1.6;
+  margin: 50px auto;
+}
+
+/* 반응형 */
+@media (max-width: 1550px) {
+  .top_section_img {
+    flex-direction: column;
+    gap: 3.5%;
+  }
+
+  .main_img {
+    height: 500px;
+    aspect-ratio: 1/1;
+  }
+  .sub_imgs {
+    flex-direction: row;
+    height: 200px;
+    aspect-ratio: 1/0.5;
+    gap: 3%;
+  }
+
+  .info_area {
+    padding: 0 50px;
+    height: 100%;
+  }
+
+  .info_area h2 {
+    margin-bottom: 0px;
+  }
+
+  .info_area .short_desc {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .main_img {
+    height: 340px;
+    aspect-ratio: 1/1;
+  }
+
+  .sub_imgs {
+    height: 150px;
+    gap: 4%;
+  }
+
+  .info_area h2 {
+    font-size: 28px;
+  }
+
+  .info_area .price {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .info_area .short_desc {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .detail_content span {
+    line-height: 1.8;
+  }
+}
+@media (max-width: 768px) {
+  .top_section {
+    display: flex;
+    flex-direction: column;
+  }
+  .top_section_img {
+    gap: 10px;
+  }
+  .main_img {
+    height: 350px;
+  }
+
+  .sub_imgs {
+    height: 175px;
+    gap: 2%;
+  }
+
+  .info_area h2 {
+    font-size: 28px;
+    padding: 0;
+    margin: 50px 0 15px;
+  }
+
+  .info_area .price {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .info_area .short_desc {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .info_area .order_btn {
+    margin-top: 50px;
+  }
+  .detail_content_img {
+    width: 100%;
+  }
+  .detail_content span {
+    font-size: 14px;
+  }
 }

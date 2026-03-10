@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 50px; /* 위아래 슬라이드 간격 */
-  margin: 600px 0 50px;
+  margin: 400px 0 50px;
 }
 
 .prd_row {
@@ -97,7 +97,7 @@
   margin: 40px 0 20px;
 }
 
-/* 모바일 대응 (반응형 선택사항) */
+/* 반응형 */
 @media (max-width: 1024px) {
   .prd_row {
     flex-direction: column !important; /* 모바일에선 무조건 위아래로 */
@@ -111,10 +111,6 @@
   .text_area {
     order: 2;
     padding: 0;
-  }
-  .slide_area,
-  .text_area {
-    width: 100%;
   }
 
   .text_area h2 {
@@ -141,7 +137,7 @@
     padding-bottom: 30px;
   }
   .popup_header h2 {
-    font-size: 18px;
+    font-size: 20px;
     padding: 0;
   }
 
@@ -153,5 +149,24 @@
   .popup_body .close_btn {
     font-size: 16px;
     margin: 30px 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  .text_area p {
+    font-size: 16px;
+  }
+  .popup_content {
+    width: 35%;
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  .popup_body .close_btn {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .popup_content {
+    width: 45%;
   }
 }

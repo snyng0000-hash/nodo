@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { prdData} from '../../data';
+import { prdData } from '../../data';
 
 import './Prd_3.css';
 function Prd_3() {

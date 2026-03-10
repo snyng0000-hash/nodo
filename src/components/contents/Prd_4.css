@@ -9,7 +9,6 @@
 
 .prd_4_box {
   width: 100%;
-  text-align: center;
   border-radius: 25px;
   position: relative;
   overflow: hidden;
@@ -25,4 +24,33 @@
 }
 .prd_4 .prd_4_text p {
   color: #fff;
+  line-height: 1.6;
+}
+@media (max-width: 1024px) {
+  .prd_4 .prd_4_text {
+    bottom: 8%;
+  }
+  .prd_4 .prd_4_text p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .prd_4 {
+    width: 100%;
+    aspect-ratio: 1/0.25;
+    padding: 0 50px;
+    display: flex;
+    margin-top: 1.5%;
+    gap: 2%;
+    flex-wrap: wrap;
+  }
+
+  .prd_4_box {
+    width: 49%;
+    border-radius: 25px;
+  }
+
+  .prd_4 .prd_4_text {
+    position: absolute;
+  }
 }

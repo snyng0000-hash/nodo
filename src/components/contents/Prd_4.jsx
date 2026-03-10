@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
-import { prdData, prdData_2 } from '../../data';
+import { prdData } from '../../data';
 import './Prd_4.css';
 
 function Prd_4() {
   return (
     <>
       <div className="prd_4">
-        {prdData.map((item) => {
+        {prdData.slice(0, 4).map((item) => {
           return (
             <>
               <Link to={`/prd/${item.id}`} key={item.id} className="prd_4_box">

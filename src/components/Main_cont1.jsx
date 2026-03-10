@@ -11,7 +11,6 @@ function Main_cont1() {
         <Prd_1></Prd_1>
         <Prd_4></Prd_4>
       </div>
-      <span className="cont1_line"></span>
     </>
   );
 }

@@ -14,7 +14,7 @@ function Cont1_slide() {
 
   return (
     <>
-      <h2>collection</h2>
+      <h2 className="cont1_slideH2">collection</h2>
       <div className="cont1_slidetrack">
         <Swiper
           spaceBetween={10}
