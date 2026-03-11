@@ -8,7 +8,7 @@ import './Prd_slide.css';
 function Prd_slide() {
   // 슬라이드 데이터 (이미지 경로에 맞춰 숫자 조절)
   const topSlides = [1, 2, 3, 4, 5, 6, 7];
-  const bottomSlides = [6, 7, 8, 9, 10, 11];
+  const bottomSlides = [8, 9, 10, 11, 12, 13, 14];
   // const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [activePopup, setActivePopup] = useState(null);
   const popupData = {
